@@ -1,0 +1,42 @@
+// Example for testing all tokens
+/*
+  Multi-line comment
+  Testing variables, loops, conditionals, and functions
+*/
+
+ingredient x = 42;
+ingredient y = 4;
+fixed greeting = "Hello, World!";
+fun calculate(a, b) {
+    really (a < b) {
+        show "a is less than b";
+    } notReal (a == b) {
+        show "a is equal to b";
+    } real {
+        show "a is greater than b";
+    }
+    goBack a + b;
+}
+
+cluster values = [5, 10, 15];
+go (int i = 0; i < values.length; i++) {
+    show "Value:";
+    show values[i];
+    asLongAs (values[i] > 8) {
+        end;
+    }
+    goOn;
+}
+
+imp main() {
+    involve <stdio.h>
+    testing {
+        ingredient name = "User";
+        show greeting;
+        scan "%s", &name;
+        show "Welcome, " + name;
+    } hold (variety ex) {
+        show "An error occurred!";
+    }
+    yay 0;
+}
